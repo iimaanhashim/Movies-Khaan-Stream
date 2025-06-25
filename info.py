@@ -5,9 +5,9 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', '17461958'))
-API_HASH = environ.get('API_HASH', '0f083cb4779252f82b99f5c644274624')
-BOT_TOKEN = environ.get('BOT_TOKEN', "8153596130:AAHYoC3QF3uXnbsscBpPU3VC7dWyTJCMqg8")
+API_ID = int(environ.get('API_ID', '20137089'))
+API_HASH = environ.get('API_HASH', '9495c0e40f6b6039fb743ab96e2b5359')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7621939312:AAGHh-MXCEi55ZZ6XnnA6aChVtBLv9WTerM")
 
 # Bot settings
 PORT = environ.get("PORT", "8080")
@@ -20,11 +20,11 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://creepy-cat-khaan-4bd65bc1.koyeb.app/")
+URL = environ.get("URL", "")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002308375163'))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '2081516065').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002866997759'))
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8057342722').split()]
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://khaanbarwaani:qL47JyUNrzSRp2Aj@cluster0.qgucx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
